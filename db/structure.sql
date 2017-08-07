@@ -118,7 +118,8 @@ CREATE TABLE assertions (
     fda_approval_information text,
     nccn_guideline text,
     created_at timestamp without time zone,
-    updated_at timestamp without time zone
+    updated_at timestamp without time zone,
+    deleted boolean DEFAULT false,
 );
 
 
@@ -3465,4 +3466,6 @@ INSERT INTO schema_migrations (version) VALUES ('20170609200608');
 INSERT INTO schema_migrations (version) VALUES ('20170622160223');
 
 INSERT INTO schema_migrations (version) VALUES ('20170804155536');
+
+INSERT INTO schema_migrations (version) VALUES ('20170807194638');
 

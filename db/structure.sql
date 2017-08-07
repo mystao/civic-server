@@ -120,6 +120,7 @@ CREATE TABLE assertions (
     created_at timestamp without time zone,
     updated_at timestamp without time zone,
     deleted boolean DEFAULT false,
+    status text DEFAULT 'submitted'::text NOT NULL
 );
 
 
@@ -3468,4 +3469,6 @@ INSERT INTO schema_migrations (version) VALUES ('20170622160223');
 INSERT INTO schema_migrations (version) VALUES ('20170804155536');
 
 INSERT INTO schema_migrations (version) VALUES ('20170807194638');
+
+INSERT INTO schema_migrations (version) VALUES ('20170807195040');
 
